@@ -1,7 +1,6 @@
 ﻿using Caliburn.Micro;
 using Caliburn.Micro.Maui;
 using CaliburnMicroMaui.ViewModels;
-using CaliburnMicroMaui.Views;
 
 namespace CaliburnMicroMaui
 {
@@ -17,7 +16,7 @@ namespace CaliburnMicroMaui
 
             //DisplayRootView<HomeView>();
 
-            DisplayRootViewForAsync<HomeViewModel>();
+            DisplayRootViewForAsync<MainViewModel>();
         }
 
         protected override void Configure()

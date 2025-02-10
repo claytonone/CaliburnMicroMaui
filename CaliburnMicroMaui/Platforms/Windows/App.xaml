@@ -1,8 +1,9 @@
-﻿<maui:MauiWinUIApplication
+﻿<cal:CaliburnApplication
     x:Class="CaliburnMicroMaui.WinUI.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:maui="using:Microsoft.Maui"
+    xmlns:cal="using:Caliburn.Micro.Maui"
     xmlns:local="using:CaliburnMicroMaui.WinUI">
 
-</maui:MauiWinUIApplication>
+</cal:CaliburnApplication>

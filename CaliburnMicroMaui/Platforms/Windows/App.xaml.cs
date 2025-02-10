@@ -1,6 +1,4 @@
-﻿using Microsoft.UI.Xaml;
-
-// To learn more about WinUI, the WinUI project structure,
+﻿// To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
 namespace CaliburnMicroMaui.WinUI
@@ -8,7 +6,7 @@ namespace CaliburnMicroMaui.WinUI
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
     /// </summary>
-    public partial class App : MauiWinUIApplication
+    public partial class App : Caliburn.Micro.Maui.CaliburnApplication
     {
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
@@ -17,6 +15,7 @@ namespace CaliburnMicroMaui.WinUI
         public App()
         {
             this.InitializeComponent();
+            Initialize();
         }
 
         protected override MauiApp CreateMauiApp() => MauiProgram.CreateMauiApp();

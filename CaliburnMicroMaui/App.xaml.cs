@@ -16,7 +16,7 @@ namespace CaliburnMicroMaui
 
             //DisplayRootView<HomeView>();
 
-            DisplayRootViewForAsync<MainViewModel>();
+            DisplayRootViewForAsync<HomeViewModel>();
         }
 
         protected override void Configure()

@@ -1,7 +1,6 @@
 ﻿using Caliburn.Micro;
 using Caliburn.Micro.Maui;
 using CaliburnMicroMaui.ViewModels;
-using CaliburnMicroMaui.Views;
 
 namespace CaliburnMicroMaui
 {

@@ -18,6 +18,8 @@ namespace CaliburnMicroMaui.ViewModels
 
         public MainViewModel(INavigationService navigationService)
         {
+            _navigationService = navigationService;
+
             DisplayName = "Home Page";
 
             Increment();

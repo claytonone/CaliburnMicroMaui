@@ -24,6 +24,7 @@ namespace CaliburnMicroMaui
             _container.Instance(_container);
             _container.PerRequest<HomeViewModel>();
             _container.PerRequest<MainViewModel>();
+            _container.PerRequest<AnotherViewModel>();
 
             base.Configure();
         }

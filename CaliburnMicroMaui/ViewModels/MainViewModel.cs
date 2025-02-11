@@ -1,4 +1,5 @@
 ﻿using Caliburn.Micro;
+using Caliburn.Micro.Maui;
 
 namespace CaliburnMicroMaui.ViewModels
 {
@@ -13,9 +14,13 @@ namespace CaliburnMicroMaui.ViewModels
 
         private int _count = 0;
 
-        public MainViewModel()
+        private INavigationService _navigationService;
+
+        public MainViewModel(INavigationService navigationService)
         {
             DisplayName = "Home Page";
+
+            Increment();
         }
 
         public void Increment()
@@ -23,6 +28,11 @@ namespace CaliburnMicroMaui.ViewModels
             _count++;
 
             Total = $"Current total is {_count}";
+        }
+
+        public void Navigate()
+        {
+            _navigationService.NavigateToViewModelAsync<AnotherViewModel>();
         }
     }
 }

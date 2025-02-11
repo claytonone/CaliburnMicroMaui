@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:cal="clr-namespace:Caliburn.Micro.Maui;assembly=Caliburn.Micro.Maui"
              xmlns:viewmodels="clr-namespace:CaliburnMicroMaui.ViewModels"
-             x:Class="CaliburnMicroMaui.Views.MainView"
-             x:DataType="viewmodels:MainViewModel"
+             x:Class="CaliburnMicroMaui.Views.AnotherView"
+             x:DataType="viewmodels:AnotherViewModel"
              Title="{Binding DisplayName}">
     <VerticalStackLayout>
-        <Button Text="Increment" cal:Message.Attach="[Event Tapped] = [Action Increment]" />
         <Label 
-            Text="{Binding Total}"
+            Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <Button Text="Navigate" cal:Message.Attach="[Event Tapped] = [Action Navigate]" />
     </VerticalStackLayout>
 </ContentPage>

@@ -7,11 +7,11 @@
              x:DataType="viewmodels:MainViewModel"
              Title="{Binding DisplayName}">
     <VerticalStackLayout>
-        <Button Text="Increment" cal:Message.Attach="[Event Tapped] = [Action Increment]" />
+        <Button Text="Increment" cal:Message.Attach="[Event Clicked] = [Action Increment]" />
         <Label 
             Text="{Binding Total}"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <Button Text="Navigate" cal:Message.Attach="[Event Tapped] = [Action Navigate]" />
+        <Button Text="Navigate" cal:Message.Attach="[Event Clicked] = [Action Navigate]" />
     </VerticalStackLayout>
 </ContentPage>
